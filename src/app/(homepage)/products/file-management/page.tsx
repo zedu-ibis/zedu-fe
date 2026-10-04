@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import { ogImageUrl, siteUrl } from "~/lib/env-urls";
 import Image from "next/image";
-import { ArrowBtn, OutlineBtn } from "../../_components/ui/Button";
-import { FeaturedCard } from "../../_components/ui/FeaturedCard";
+import { ogImageUrl, siteUrl } from "~/lib/env-urls";
 import { DynamicFooter } from "../../_components/footer/dynamic-footer";
 import { FAQSection } from "../../_components/home/FAQSection";
+import { ArrowBtn, OutlineBtn } from "../../_components/ui/Button";
+import { FeaturedCard } from "../../_components/ui/FeaturedCard";
 import type { HomeFAQ } from "../../_lib/faqData";
 
 export const metadata: Metadata = {
@@ -106,7 +106,7 @@ const otherFeatures = [
   },
   {
     icon: "/images/homepage/icons/AI-class-note.png",
-    title: "Ai Agents",
+    title: "AI Agents",
     description: "Summarize documents and highlight key information.",
   },
   {
