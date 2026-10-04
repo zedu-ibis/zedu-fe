@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import { ogImageUrl, siteUrl } from "~/lib/env-urls";
-import Image from "next/image";
 import { Star } from "lucide-react";
+import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowBtn, OutlineBtn } from "~/app/(homepage)/_components/ui/Button";
-import { WhyCard } from "~/app/(homepage)/_components/ui/WhyCard";
-import { FeaturedCard } from "~/app/(homepage)/_components/ui/FeaturedCard";
 import { ComparisonShowcase } from "~/app/(homepage)/_components/ui/ComparisonShowcase";
+import { FeaturedCard } from "~/app/(homepage)/_components/ui/FeaturedCard";
+import { WhyCard } from "~/app/(homepage)/_components/ui/WhyCard";
+import { ogImageUrl, siteUrl } from "~/lib/env-urls";
 import { DynamicFooter } from "../../_components/footer/dynamic-footer";
 
 export const metadata: Metadata = {
@@ -154,7 +154,7 @@ const BootCampsSolutionsPage = () => {
               </div>
               <span className="font-semibold text-[#1f2530]">4.9</span>
               <span className="text-[#8a90a0]">|</span>
-              <span>Users Love us</span>
+              <span>Users Love Us</span>
             </div>{" "}
             <div className="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
               <ArrowBtn text="Book a Demo" href="/contact-sales" />
@@ -166,7 +166,7 @@ const BootCampsSolutionsPage = () => {
             <div className="relative aspect-[16/11] w-full sm:aspect-[4/3] lg:aspect-[16/10]">
               <Image
                 src="/images/homepage/solutions/bootcamps-hero.png"
-                alt="Students seated together while collaborating in the Zedu school workspace"
+                alt="Students collaborating in the Zedu bootcamp workspace"
                 fill
                 priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 680px"

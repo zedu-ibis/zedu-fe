@@ -1,15 +1,15 @@
 import { Metadata } from "next";
-import { ogImageUrl, siteUrl } from "~/lib/env-urls";
 import Image from "next/image";
-import { ArrowBtn, OutlineBtn } from "../../_components/ui/Button";
+import { ogImageUrl, siteUrl } from "~/lib/env-urls";
+import { DynamicFooter } from "../../_components/footer/dynamic-footer";
+import { FAQSection } from "../../_components/home/FAQSection";
 import {
   FilesIcon,
+  MessagesIcon,
   MessagesQuestionIcon,
   ShareIcon,
 } from "../../_components/svgs";
-import { MessagesIcon } from "../../_components/svgs";
-import { FAQSection } from "../../_components/home/FAQSection";
-import { DynamicFooter } from "../../_components/footer/dynamic-footer";
+import { ArrowBtn, OutlineBtn } from "../../_components/ui/Button";
 import type { HomeFAQ } from "../../_lib/faqData";
 
 export const metadata: Metadata = {
@@ -101,7 +101,7 @@ const otherFeatures = [
   },
   {
     icon: "/images/homepage/icons/AI-class-note.png",
-    title: "Ai Agents",
+    title: "AI Agents",
     description:
       "AI assistants that summarize discussions and answer questions.",
   },
@@ -121,13 +121,13 @@ const channelsFAQs: HomeFAQ[] = [
   },
   {
     id: "channels-item-2",
-    question: "What can I do in a Channels?",
+    question: "What can I do in a Channel?",
     answer:
       "You can share updates, ask questions, post resources, and collaborate through threaded discussions with students, educators, or teams.",
   },
   {
     id: "channels-item-3",
-    question: "How do I start a Channels?",
+    question: "How do I start a Channel?",
     answer:
       "Create a new channel from your workspace, give it a clear name based on purpose, and invite the right participants to begin the conversation.",
   },
@@ -135,7 +135,7 @@ const channelsFAQs: HomeFAQ[] = [
     id: "channels-item-4",
     question: "Are Channels free?",
     answer:
-      "Channels availability depends on your workspace plan. You can start with available features and upgrade if you need advanced collaboration tools.",
+      "Channel availability depends on your workspace plan. You can start with available features and upgrade if you need advanced collaboration tools.",
   },
 ];
 
